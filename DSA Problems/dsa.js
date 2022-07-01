@@ -607,7 +607,7 @@ duplicateArr =(array)=>{
         }
     }   return array
 }
-console.log(duplicateArr([0,0,1,2,2,2,3,3,4,4,5,5]))
+// console.log(duplicateArr([0,0,1,2,2,2,3,3,4,4,5,5]))
 //                         [0,1,2,3,4,5]
 
      swapEle = (arr)=>{
@@ -634,8 +634,119 @@ printFirstNegativeInteger=(n, k, arr)=>{
     }
 }
 
-    
 
+//**********************************************************************/
+// Q.Given an array of repeated elements, return the most repeated element from the array.  
+//[1,5,7,2,8,3,9,2,8,3,8,1,6,8,3,8,4,8]
+
+mostRepeated=(arr)=>{
+    let map = new Map()
+
+    for(let i in arr){
+        if(map.get(arr[i]) == undefined) map.set(arr[i],1)
+        else map.set(arr[i],map.get(arr[i]) +1 )
+    }
+   let repeatedElem =0
+   let count =0
+     for(let elem of map){
+        if(elem[1]>count){
+            count = elem[1]
+            repeatedElem=elem[0]
+        }
+     }
+     return repeatedElem
+}
+// console.log(mostRepeated([1,5,7,2,8,3,9,2,8,3,8,1,6,8,3,8,4,8])) //  -> 8 most repeated
+
+
+//Write a function to merge these two arrays & result should be like this -
+let array1 = [
+{ name: "a", value: 123 },
+{ name: "b", value: 666 },
+];
+let array2 = [
+{ name: "c", value: 444 },
+{ name: "d", value: 999 },
+{ name: "b", value: 111 },
+];
+// result: [
+// { name: "a", value: 123 },
+// { name: "b", value: 111 },
+// { name: "c", value: 444 },
+// { name: "d", value: 999 },
+// ];
+let result1 = [...array1,...array2]
+
+let result2 = result1.slice(0,4)
+ result2[1].value=111
+console.log(result2)
+
+
+
+
+
+
+
+//************************************************************************** */
+
+// Count array elements that divide sum of all other elements
+
+// Given an array of integers, find the number of elements in the array, which divide the sum of all other elements.
+
+ 
+
+// Input:
+
+//     5
+
+//     3 10 4 6 7  output -> 3
+
+function solution(a,b) {
+  //Write your solution here
+    let sum =0
+    let count  = 0
+    for(let i in b){
+        sum+=b[i]
+    }
+    for(let j in b){
+        if((sum-b[j])%b[j]==0){
+            count++;
+        }
+    }
+    return count
+}
+
+
+//******************************************************************************** */
+
+//find index of given number from array
+//[2,3,6,3,8,5,2]   N=5  outpu -> 5
+
+isIndex=(arr,N)=>{
+    let index =""
+    for(let i in arr){
+        if(arr[i]==N){
+           index+=i + "  "
+       
+    }}
+    return index.length>0 ? index:false
+}
+// console.log(isIndex([2,3,4,2,5,6,7],0))
+
+//*******************************************************************8 */
+
+//find missing number in an aaray with random numbers
+
+var a = [5],
+  count = 10,             
+  missing = [];
+
+for (var i = 1; i <= count; i++) {
+  if (a.indexOf(i) == -1) {
+    missing.push(i);
+  }
+}
+// console.log(missing)
 
 
 

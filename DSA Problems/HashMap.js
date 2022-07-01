@@ -44,7 +44,7 @@ maxFreq = (arr)=>{
     result[1] = maxCount
     return result   
 }
-console.log(maxFreq([1, 2, 3, 4, 1, 1, 1, 3,4,4,4,4,4, 4]))
+// console.log(maxFreq([1, 2, 3, 4, 1, 1, 1, 3,4,4,4,4,4, 4]))
 
 
 //*8888**********************************************************************
@@ -77,5 +77,27 @@ function solution(a,b) {
      }
       return "No"
   }
-  console.log(solution("hello world","aaallbbbbcc"))
+//   console.log(solution("hello world","aaallbbbbcc"))
+
+secFreq=(a)=>{
+
+    let map = new Map()
+      for(let elem in a){
+     if(map.get(a[elem]) == undefined) map.set(a[elem],1)
+     else map.set(a[elem],map.get(a[elem]) + 1)
+      }
+    console.log(map)
+      let letter =""
+      let count =0
+      for(let pair of map){
+          if(pair[1]>count){
+              count  =  pair[1]
+              letter = pair[0]
+          }
+      }
+   
+
+
+}
+console.log(secFreq('aaabbcccc'))
   

@@ -132,7 +132,7 @@ revEle = (array) =>{
           }
           return newStr.join(" ")
      }
-// console.log(revEle("hii to all"))
+console.log(revEle("hii to all"))
 
 // *****************************************************
 

@@ -12,7 +12,7 @@ while(i<j){
 }
 return arr
 }
-console.log(revArray([1,2,3,4,5]))    // -> [ 5, 4, 3, 2, 1 ]
+// console.log(revArray([1,2,3,4,5]))    // -> [ 5, 4, 3, 2, 1 ]
 
 reverseArr =(arr)=>{
     let left =0; right= arr.length-1
@@ -24,7 +24,7 @@ reverseArr =(arr)=>{
         }
         return arr
 }
-console.log(reverseArr([1,2,3,4,5]))  // -> [ 5, 4, 3, 2, 1 ]
+// console.log(reverseArr([1,2,3,4,5]))  // -> [ 5, 4, 3, 2, 1 ]
 
 reverseArray=(array)=>{
     let arr=[]
@@ -33,4 +33,7 @@ reverseArray=(array)=>{
     }
     return arr
 }
-console.log(reverseArray([1,2,3,4,5]))   // -> [ 5, 4, 3, 2, 1 ]
+// console.log(reverseArray([1,2,3,4,5]))   // -> [ 5, 4, 3, 2, 1 ]
+
+
+

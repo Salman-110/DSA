@@ -22,7 +22,7 @@ let arrayyy = [1,2,3,4,5,6]
 
 let resulttt = arrayyy.map(x=>x.toString(2))
 
-console.log(resulttt)
+// console.log(resulttt)
 
 //*************************************************************** */
 
@@ -37,7 +37,7 @@ console.log(resulttt)
 //  console.log(NamesList)
 
  let age = users.filter(x=>x.Age<25).map(x=>x.fisrtName)                          // -> fisrtName of user age less then 25 
- console.log(age)
+//  console.log(age)
 
 
 //*******************************FILTER FUNCTION************************* */
@@ -85,7 +85,7 @@ let ageCount = users.reduce((acc,curr)=>{
     }
     return acc
 },{})
-console.log(ageCount)
+// console.log(ageCount)
 
 // -> fisrtName of user age less then 25 
 let Users = [
@@ -101,9 +101,16 @@ let usersFnameOfAge = Users.reduce((acc,curr)=>{
          }
           return acc
 },[])
-console.log(usersFnameOfAge)
+// console.log(usersFnameOfAge)
 
 //888888888*********************************************
+
+// Merge two Arrays using spread opetrator
+
+let arr1 =[1,2,3,4,5]  
+let arr2 = [6,7,8,9]
+let arr3 = [...arr1 ,...arr2]
+console.log(arr3)
 
 
 

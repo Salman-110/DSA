@@ -1,0 +1,11 @@
+function isPrime(num) { 
+    let arr=[]
+    for (var i = 2; i < num; i++) { 
+      if (num % i === 0) { 
+        return false; 
+      }
+       else arr.push(num)
+    } 
+    return arr
+  } 
+console.log(isPrime([2,3,5,7,9]))

@@ -6,6 +6,7 @@ function winSlide9(Arr,K){
   
     while(j<Arr.length){
         sum+=Arr[j]
+        console.log(sum)
         if(j-i+1<K) 
           j++;
 
@@ -13,12 +14,12 @@ function winSlide9(Arr,K){
               // 1 unit
             sum -=Arr[i]
             i++;
-            j++;
+            j++;7
         }
     } 
     return sum
 }
-  // console.log(winSlide9([1,4,3,4,5,6,8,9],3))
+  console.log(winSlide9([1,4,3,4,5,6,8,9],3))
 
   // *************************************************************************
   //Q. find smallest substring length with all distinct character 
