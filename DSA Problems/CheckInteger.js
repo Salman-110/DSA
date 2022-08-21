@@ -12,7 +12,7 @@ checkInt =(input)=>{
     }
      return isNum
 }
-console.log(checkInt("1234455666656575756756765"))
+console.log(checkInt("1234455666656575a756756765"))
 
 //************************************************************ */
 
@@ -22,6 +22,6 @@ checkIntWithRegex =(input)=>{
 
    return regex.test(input)
 }
-console.log(checkInt("123445566665657575756765"))
+console.log(checkInt("123445566a665657575756765"))
 
 //

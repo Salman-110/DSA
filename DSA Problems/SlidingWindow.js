@@ -6,20 +6,22 @@ function winSlide9(Arr,K){
   
     while(j<Arr.length){
         sum+=Arr[j]
-        console.log(sum)
+      
         if(j-i+1<K) 
           j++;
 
         else if(j-i+1 == K){
-              // 1 unit
+             mxsum= (mxsum > sum)  ? mxsum:sum
+             console.log(sum)
+             console.log(mxsum)
             sum -=Arr[i]
             i++;
-            j++;7
+            j++;
         }
     } 
-    return sum
+    return mxsum
 }
-  console.log(winSlide9([1,4,3,4,5,6,8,9],3))
+  // console.log(winSlide9([1,4,3,4,5,6,8,9],3))
 
   // *************************************************************************
   //Q. find smallest substring length with all distinct character 
@@ -67,9 +69,58 @@ function winSlide9(Arr,K){
 
 // Q.Given a string S, find the smallest window(substring) length with all distinct characters of the given string.
 
-smallestSubstringLenW = (str)=>{
+// MaxSum of sub string
 
-          
-  
+function maxSum(arr,k){
+    let i=0;                                  
+    let j=0;
+    let negNo =[]
+      
+
+    
+
+    
+    
 
 }
+// console.log(maxSum([1,-41,3,-4,-5,6,-8,-9],3))
+
+// [8,-1,8,-6,-5,4,3,-2,4,-6] 3
+//output =[ -1 , -1, -6, -5 , -2 ,-2]
+
+function printFirstNegativeInteger(arr , n , k)
+    {
+     
+        var Di = [];
+ 
+        var i;
+        for (i = 0; i < k; i++)
+ 
+          
+            if (arr[i] < 0)
+                Di.push(i);
+ 
+        
+        for (; i < n; i++) {
+          
+            if (Di.length!==0)
+             (arr[Di[0]] + " ");
+ 
+ 
+            
+            while ((Di.length!==0) && Di[0] < (i - k + 1))
+                Di.shift(); // Remove from front of queue
+ 
+           
+            if (arr[i] < 0)
+                Di.push(i);
+        }
+ 
+       
+        if (Di.length !== 0)
+            document.write(arr[Di[0]] + " ");
+        else
+            document.write("0" + " ");
+    }
+    console.log(printFirstNegativeInteger([1,-41,3,-4,-5,6,-8,-9],7,3))
+ 

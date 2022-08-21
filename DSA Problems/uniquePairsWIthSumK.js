@@ -12,7 +12,10 @@ pairSumK =(arr,k)=>{
         if(map.get(k-key) && !(pair.has(key) || pair.has(k-key)) ){  //pairs of elements with sum k and getting unique pairs
             pair.set(key,k-key)
         }
-     }
-     return pair
+    }
+    
+    return pair
 }
-console.log(pairSumK([2,1,3,4,2,5,4],5))  
+console.log(pairSumK([1,2,3,4,4,5,6,7],9))               
+
+

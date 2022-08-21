@@ -110,7 +110,30 @@ let usersFnameOfAge = Users.reduce((acc,curr)=>{
 let arr1 =[1,2,3,4,5]  
 let arr2 = [6,7,8,9]
 let arr3 = [...arr1 ,...arr2]
-console.log(arr3)
+// console.log(arr3)
+
+
+// let Arr= [1,2,3,4,5,6]
+
+
+
+
+function Result(x,i,arr){
+    arr[i]=x*2
+}
+const numbers = [65, 44, 12, 4];
+numbers.forEach(Result)
+console.log(numbers)
+
+// const numbers = [65, 44, 12, 4];
+// numbers.forEach(myFunction)
+
+// function myFunction(item, index, arr) {
+//   arr[index] = item * 10;
+// }
+// // console.log(numbers)
+
+
 
 
 

@@ -42,7 +42,7 @@ ispalindrome = (str)=>{
     }
     return 1
 }
-console.log(ispalindrome( "salas"))
+console.log(ispalindrome( "salass"))
 
 // ***********************************************************
 // Q. check palindromic STRING using RECURSION
@@ -57,7 +57,7 @@ isPalindrome = (str,left,right)=>{
     }
         return true
 }
-// console.log(isPalindrome("salan",0,4))
+// console.log(isPalindrome("salsal",0,5))
 
 //************************************************************************* */
 // Q.check palindromic NUMBER using RECURSION

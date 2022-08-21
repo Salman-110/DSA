@@ -77,7 +77,7 @@ function solution(a,b) {
      }
       return "No"
   }
-//   console.log(solution("hello world","aaallbbbbcc"))
+  console.log(solution("hellooo world","aaalloooobbbbcc"))
 
 secFreq=(a)=>{
 
@@ -87,17 +87,20 @@ secFreq=(a)=>{
      else map.set(a[elem],map.get(a[elem]) + 1)
       }
     console.log(map)
-      let letter =""
-      let count =0
-      for(let pair of map){
-          if(pair[1]>count){
-              count  =  pair[1]
-              letter = pair[0]
-          }
-      }
-   
-
-
-}
-console.log(secFreq('aaabbcccc'))
+    let max = 0;
+    let prevMax = 0;
+    for(let i of map){
+       if(i[1]>max){
+           prevMax=max
+           max = i[1]
+       }
+       if(i[1]>prevMax && i[1]<max){
+             prevMax = i[1]
+       }
+    }
+     for(let pairs of map){
+        if(pairs[1]==prevMax)  return pairs[0]
+     }
+   }
+// console.log(secFreq('aaaaaaaaaaabbbbbbccccccccccccccccc'))
   

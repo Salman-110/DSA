@@ -34,3 +34,11 @@ print2largest = (arr)=>{
     
 }
 console.log(print2largest([1,2,10,4,5,6,7,11,13,12,8,76,45,89,]))
+
+const print2ndlargestElem=()=>{
+       
+
+
+    
+}
+console.log(print2ndlargestElem([1,2,10,4,5,6,7,11,13,12,8,76,45,89,]))

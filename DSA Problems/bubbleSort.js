@@ -9,14 +9,15 @@ bullbleSort =(array)=>{
         for(let j=0;j<=array.length-2;j++){     // loop for comparing adjacent element j and j+1
             if(array[j]>array[j+1]){
                 //SWAP
-                array[j]=array[j]+array[j+1]
-                array[j+1]= array[j]-array[j+1]
-                array[j]=array[j]-array[j+1]
+                array[j]=array[j]+array[j+1]       // Using  a = a+b    a=1  b=2  3
+                array[j+1]= array[j]-array[j+1]           // b = a-b     3 - 2    1         
+                array[j]=array[j]-array[j+1]              // a = a-b     3 - 1    2   hence, a = 2 , b  =  1          
             swap=true
             }
         }
-        if(swap==false) break;
+        if(swap==false)
+            break;
     }
-    return array
+        return array
 }
-console.log(bullbleSort([1,2,3,4,5,6,7,8,9]))
+console.log(bullbleSort([5,3,2,5,7,5,4,3,2,9,0,7,6,2,3,1]))

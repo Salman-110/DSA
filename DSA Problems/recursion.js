@@ -6,21 +6,22 @@ recursiveSum = (N)=>{
         return 1
     }
     else{
-         console.log(N)
-        recursiveSum(N-1)
+        // console.log(N)
+       sum = sum + recursiveSum(N-1)
     }
+    return sum
 }
-// recursiveSum(15)
+console.log(recursiveSum(15))
 
 
 // *******************************************************
 
 ispalindrome = (str ,left ,right)=>{
  
-    if(left<right){
+    while(left<right){
 
         if(str[left] === str[right]){
-            return ispalindrome(str  , left+1, right-1)
+            return ispalindrome(str , left+1, right-1)
         }
         else{
              return 0
@@ -28,7 +29,7 @@ ispalindrome = (str ,left ,right)=>{
     }
     return 1
 }
-console.log(ispalindrome( "salas", 0,4))
+console.log(ispalindrome( "salaas", 0,4))
 
 // ***************************************************************************
 // Q. reverse the string using recursion
@@ -132,7 +133,7 @@ revEle = (array) =>{
           }
           return newStr.join(" ")
      }
-console.log(revEle("hii to all"))
+// console.log(revEle("hii to all"))
 
 // *****************************************************
 
@@ -143,7 +144,7 @@ isPlainNum = (arr2)=>{
     if(arr.length==1) {return true}
      return (arr[0] == arr.slice(-1) && isPlainNum(arr.slice(1,-1)))
 }
-console.log(isPlainNum(121))
+// console.log(isPlainNum(121))
 
 // ************************************
 func= (arr) =>{

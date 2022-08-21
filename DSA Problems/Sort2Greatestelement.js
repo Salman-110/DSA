@@ -8,7 +8,7 @@ sort2gretest =(arr)=>{
     let arr2=arr1.filter(x=>x<max2)
     return arr2.sort()
 }
-// console.log(sort2gretest([5,6,3,2,7,9,5,3]))  // 
+console.log(sort2gretest([5,6,3,2,7,9,5,3]))  // 
 
 
 //**********************************Without using inBuit()****************************************** */

@@ -16,4 +16,4 @@ filterOutDupli =(arr)=>{
     }
     return array
 }
-console.log(filterOutDupli([1,1,2,3,4,20,4,5,2]))   //->[ 3, 20, 5 ]
+console.log(filterOutDupli([1, 2, 3, 2, 4, 5, 5, 6]))   //->[ 3, 20, 5 ]

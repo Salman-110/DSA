@@ -1,5 +1,7 @@
 //  https://youtu.be/E3dboLSBeJc    - refer this video
 
+const { json } = require("express")
+
 // 1. shallow copy = do by assigning variable 
 //                  eg) let arr1 = {name : "salman"}
 //                      let arr2 = arr1
@@ -19,9 +21,21 @@
 
 
 let arr = {name:"salman", area:{street:"fc road" , city: "pune"},city:"pune"}
-let arr2 =Object.assign({},arr)
+let arr2 =JSON.parse(JSON.stringify(arr))
 arr2.area.street = "amit"
 
 // console.log(arr)
 
 // console.log(arr2)
+
+
+
+let data = { 
+     name:"salman" , add:"pune",
+fullName: function (){
+  
+    return this.name + " " + this.add
+
+}
+}
+console.log(data.fullName())

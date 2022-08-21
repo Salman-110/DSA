@@ -13,7 +13,7 @@ for(let i=0;i<array.length;i++){
 let arrayy = [10,20,30,40,50,60]
 
 let resultt = arrayy.map(ele=>(ele*2))
-console.log(resultt)
+// console.log(resultt)
 
 //Convert number into binary
 

@@ -16,4 +16,4 @@ console.log(finalArray)
 
 //************************************************************** */
 
-let result2 = array1.filter(ele=>ele%2===0)      // filtering even elements
+// let result2 = array1.filter(ele=>ele%2===0)      // filtering even elements

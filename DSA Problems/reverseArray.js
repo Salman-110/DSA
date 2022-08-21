@@ -35,5 +35,11 @@ reverseArray=(array)=>{
 }
 // console.log(reverseArray([1,2,3,4,5]))   // -> [ 5, 4, 3, 2, 1 ]
 
+let i =1
+console.log(i++)
+console.log(i)
+console.log(++i)
+
+
 
 
